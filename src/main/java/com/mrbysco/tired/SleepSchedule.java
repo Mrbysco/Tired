@@ -11,8 +11,8 @@ public class SleepSchedule {
 		public final IntValue sleepDivision;
 
 		Common(ForgeConfigSpec.Builder builder) {
-			builder.comment("Sleep settings")
-					.push("Sleep");
+			builder.comment("Sleep Schedule")
+					.push("Schedule");
 
 			sleepDivision = builder
 					.comment("Defines the division of the day to sleep towards (4 = quarter, 2 = half, 1 = full day) [Default: 4]")
