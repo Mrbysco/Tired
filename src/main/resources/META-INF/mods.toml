@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+issueTrackerURL="https://github.com/Mrbysco/Tired/issues"
+license="MIT"
+
+[[mods]]
+modId="tired"
+version="${file.jarVersion}"
+displayName="Tired"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/tired"
+authors="Mrbysco"
+description='''
+I just want to sleep, let me sleep!
+'''
+[[dependencies.tired]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18,1.19)"
+ordering="NONE"
+side="BOTH"
