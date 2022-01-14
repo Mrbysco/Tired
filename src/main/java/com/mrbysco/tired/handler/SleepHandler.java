@@ -1,7 +1,7 @@
 package com.mrbysco.tired.handler;
 
 import com.mrbysco.tired.SleepSchedule;
-import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.IWorld;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.event.entity.player.SleepingTimeCheckEvent;
 import net.minecraftforge.event.world.SleepFinishedTimeEvent;
@@ -16,9 +16,9 @@ public class SleepHandler {
 
 	@SubscribeEvent
 	public void onSleepFinished(SleepFinishedTimeEvent event) {
-		LevelAccessor level = event.getWorld();
+		IWorld world = event.getWorld();
 		long dividedTime = 24000L / SleepSchedule.COMMON.sleepDivision.get();
-		long j = level.getLevelData().getDayTime() + dividedTime;
+		long j = world.getLevelData().getDayTime() + dividedTime;
 		long newTime = (j - j % dividedTime);
 		event.setTimeAddition(newTime);
 	}

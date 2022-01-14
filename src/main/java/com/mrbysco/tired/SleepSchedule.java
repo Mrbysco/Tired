@@ -3,7 +3,7 @@ package com.mrbysco.tired;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.ForgeConfigSpec.IntValue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.event.config.ModConfigEvent;
+import net.minecraftforge.fml.config.ModConfig;
 import org.apache.commons.lang3.tuple.Pair;
 
 public class SleepSchedule {
@@ -32,12 +32,12 @@ public class SleepSchedule {
 	}
 
 	@SubscribeEvent
-	public static void onLoad(final ModConfigEvent.Loading configEvent) {
+	public static void onLoad(final ModConfig.Loading configEvent) {
 		Tired.LOGGER.debug("Loaded Tired's config file {}", configEvent.getConfig().getFileName());
 	}
 
 	@SubscribeEvent
-	public static void onFileChange(final ModConfigEvent.Reloading configEvent) {
+	public static void onFileChange(final ModConfig.Reloading configEvent) {
 		Tired.LOGGER.debug("Tired's config just got changed on the file system!");
 	}
 }
