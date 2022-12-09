@@ -1,4 +1,5 @@
-[![build](https://github.com/Mrbysco/Tired/actions/workflows/build.yml/badge.svg)](https://github.com/Mrbysco/Tired/actions/workflows/build.yml) [![](http://cf.way2muchnoise.eu/versions/567492.svg)](https://www.curseforge.com/minecraft/mc-mods/tired)
+[![build](https://github.com/Mrbysco/Tired/actions/workflows/build.yml/badge.svg)](https://github.com/Mrbysco/Tired/actions/workflows/build.yml) 
+[![](http://cf.way2muchnoise.eu/versions/567492.svg)](https://www.curseforge.com/minecraft/mc-mods/tired)
 
 # Tired #
 
