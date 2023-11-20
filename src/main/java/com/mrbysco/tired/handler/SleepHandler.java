@@ -2,10 +2,10 @@ package com.mrbysco.tired.handler;
 
 import com.mrbysco.tired.SleepSchedule;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraftforge.event.entity.player.SleepingTimeCheckEvent;
-import net.minecraftforge.event.level.SleepFinishedTimeEvent;
-import net.minecraftforge.eventbus.api.Event.Result;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event.Result;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.entity.player.SleepingTimeCheckEvent;
+import net.neoforged.neoforge.event.level.SleepFinishedTimeEvent;
 
 public class SleepHandler {
 	@SubscribeEvent

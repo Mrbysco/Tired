@@ -2,12 +2,12 @@ package com.mrbysco.tired;
 
 import com.mojang.logging.LogUtils;
 import com.mrbysco.tired.handler.SleepHandler;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig.Type;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModLoadingContext;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
 @Mod(Tired.MOD_ID)
@@ -17,9 +17,9 @@ public class Tired {
 
 	public Tired() {
 		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-		ModLoadingContext.get().registerConfig(Type.COMMON, SleepSchedule.commonSpec);
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, SleepSchedule.commonSpec);
 		eventBus.register(SleepSchedule.class);
 
-		MinecraftForge.EVENT_BUS.register(new SleepHandler());
+		NeoForge.EVENT_BUS.register(new SleepHandler());
 	}
 }
