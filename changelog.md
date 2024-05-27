@@ -1,1 +1,1 @@
-* Initial build to 1.20.5
+* Initial build to 1.20.6
