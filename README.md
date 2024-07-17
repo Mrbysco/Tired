@@ -8,7 +8,7 @@ Allows you to always sleep and skip quarter of the day.
 
 ## License ##
 * Tired is licensed under the MIT License
-    - © 2021 Mrbysco
+    - © 2024 Mrbysco
     - [![License](https://img.shields.io/badge/License-MIT-red.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 
