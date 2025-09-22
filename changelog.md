@@ -1,1 +1,2 @@
-* Initial build to 1.21
+* Enable in-game config
+* Remove left-over debug logging
