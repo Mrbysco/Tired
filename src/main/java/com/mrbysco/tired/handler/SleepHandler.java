@@ -29,7 +29,6 @@ public class SleepHandler {
 		long dividedTime = 24000L / SleepSchedule.COMMON.sleepDivision.get();
 		long j = level.getLevelData().getDayTime() + dividedTime;
 		long newTime = (j - j % dividedTime);
-		System.out.println(newTime);
 		event.setTimeAddition(newTime);
 	}
 }
