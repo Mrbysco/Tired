@@ -1,2 +1,1 @@
-* Enable in-game config
-* Remove left-over debug logging
+* Update to 1.21.11
