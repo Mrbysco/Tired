@@ -11,14 +11,14 @@ import net.neoforged.neoforge.event.level.SleepFinishedTimeEvent;
 public class SleepHandler {
 	@SubscribeEvent
 	public void onCanSleep(CanPlayerSleepEvent event) {
-		if (event.getProblem() == Player.BedSleepingProblem.NOT_POSSIBLE_NOW) {
+		if (event.getProblem() == Player.BedSleepingProblem.NOT_SAFE) {
 			event.setProblem(null);
 		}
 	}
 
 	@SubscribeEvent
 	public void onCanContinueSleeping(CanContinueSleepingEvent event) {
-		if (event.getProblem() == Player.BedSleepingProblem.NOT_POSSIBLE_NOW) {
+		if (event.getProblem() == Player.BedSleepingProblem.NOT_SAFE) {
 			event.setContinueSleeping(true);
 		}
 	}
